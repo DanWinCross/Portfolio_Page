@@ -1,0 +1,51 @@
+/* global styles  */
+
+
+body {
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+    background-color: #FDFEFF;
+    color: #43484A;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+        "nav nav nav"
+        "aside title img"
+        "aside skills img"
+        "aside projects img";
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+   grid-area: aside; 
+}
+
+.title-about{
+    grid-area: title;
+}
+
+img {
+    grid-area: img;
+    /* max-width: 400px; */
+    max-height: 500px;
+}
+
+.skills{
+    grid-area: skills;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+
+.skills-logos img {
+    max-width: 40px;
+}
+
+
