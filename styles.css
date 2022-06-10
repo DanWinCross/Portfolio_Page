@@ -41,8 +41,9 @@ nav {
 
 aside {
    grid-area: aside; 
-   align-self: center;
-    justify-self: start;
+   align-self: end;
+    justify-self: center;
+    
 }
 
 .title-about{
@@ -80,6 +81,10 @@ img {
     max-width: 40px;
 }
 
+.skills-logos img {
+    padding: 1rem;
+}
+
 /* nav styling  */
 
 ul {
@@ -101,8 +106,31 @@ ion-icon{
 }
 
 .project-links li {
-    display: block;
+    display: inline-block;
     padding-top: 1rem;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 780px) {
+    body{
+        grid-template-rows: repeat(6 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "nav"
+            "title"
+            "img"
+            "skills"
+            "projects"
+            "aside";   
+    }
+
+
+}
+
+
+
+   
+
+
 
