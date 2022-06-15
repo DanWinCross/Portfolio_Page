@@ -12,6 +12,8 @@ let nameReturn = function() {
 
 titleName.addEventListener('mouseover', nameChange);
 titleName.addEventListener('mouseout', nameReturn);
+titleName.addEventListener('touchstart', nameChange);
+titleName.addEventListener('touchend', nameReturn);
 
 
 // Increase Picture size when over and spin 
