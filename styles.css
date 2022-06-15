@@ -13,6 +13,7 @@ a {
 }
 
 body {
+    box-sizing: border-box;
     font-size: 18px;
     font-family: 'Inconsolata', monospace;
     background-color: #F0F1F2;
@@ -30,6 +31,13 @@ body {
         "aside projects img";
     justify-content: center;
     align-items: end;
+}
+
+p {
+    text-align: center;
+    white-space: pre-line;
+    word-wrap: break-word;
+    
 }
 
 nav {
@@ -51,7 +59,8 @@ aside {
     align-self: end;
     justify-self: center;
     text-align: center;
-    float: right;
+    /* float: right; */
+    /* border: 1px solid purple; */
 }
 
 img {
@@ -59,7 +68,7 @@ img {
     /* max-width: 400px; */
     max-width: 600px;
     align-self: center;
-    justify-self: center;
+    justify-self: start;
 }
 
 .skills{
@@ -114,18 +123,56 @@ ion-icon{
 
 @media only screen and (max-width: 780px) {
     body{
-        grid-template-rows: repeat(6 1fr);
-        grid-template-columns: 1fr;
+        box-sizing: border-box;
+        grid-template-rows: repeat(6 4fr);
+        grid-template-columns: 5fr;
         grid-template-areas: 
             "nav"
             "title"
             "img"
             "skills"
             "projects"
-            "aside";   
+            "aside"; 
+        flex-wrap: wrap;
+        
+    }
+
+    ul{
+        
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: flex-start;
     }
 
 
+    .title-about{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    p {
+        max-width: 80%;
+    }
+    aside ul{
+        
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 420px){
+    img {
+        max-width: 400px;
+    }
 }
 
 
