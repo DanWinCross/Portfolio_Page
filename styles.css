@@ -37,7 +37,7 @@ p {
     text-align: center;
     white-space: pre-line;
     word-wrap: break-word;
-    
+    display: none;
 }
 
 nav {
@@ -71,11 +71,20 @@ img {
     justify-self: start;
 }
 
+button {
+    background-color:#FF5629 ;
+    color: #232625;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 20px;
+}
+
 .skills{
     grid-area: skills;
     align-self: center;
     justify-self: center;
     text-align: center;
+    display: none;
 }
 
 .projects {
@@ -83,6 +92,7 @@ img {
     align-self: center;
     justify-self: center;
     text-align: center;
+    display: none;
 }
 
 

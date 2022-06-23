@@ -1,27 +1,29 @@
-// Change the name in H1
+// Change the name in H1///
 
+// assign variable to heading target 
 let titleName = document.querySelector('h1');
+let button = document.querySelector('button');
+// console.log(button);
 
-let nameChange = function() {
+// function to alter innerHTML of H1 
+const nameChange = function() {
     document.querySelector('h1').innerHTML = 'Dan:)';
 }
-
-let nameReturn = function() {
-    document.querySelector('h1').innerHTML = 'Daniel Cross';
+// function to return to origional 
+const nameReturn = function () {
+    document.querySelector('h1').innerHTML = 'Daniel Cross'
 }
 
+//hide all elements after clicking button 
+const revealInfo = function (e) {
+    console.log(e);
+    document.querySelector('p').style.display = 'block';
+    document.querySelector('.skills').style.display = 'block';
+    document.querySelector('.projects').style.display = 'block';
+}
+
+// event listeners 
+button.addEventListener('click', revealInfo);
 titleName.addEventListener('mouseover', nameChange);
-titleName.addEventListener('mouseout', nameReturn);
-titleName.addEventListener('touchstart', nameChange);
-titleName.addEventListener('touchend', nameReturn);
+titleName.addEventListener('mouseleave', nameReturn);
 
-
-// Increase Picture size when over and spin 
-
-// let picture = document.getElementsById('profile');
-
-// let pictureGrow = function () {
-//     picture.style.minWidth = '800px';
-// }
-
-// picture.addEventListener('mouseover', pictureGrow);
