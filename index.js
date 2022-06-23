@@ -14,12 +14,14 @@ const nameReturn = function () {
     document.querySelector('h1').innerHTML = 'Daniel Cross'
 }
 
-//hide all elements after clicking button 
+//reveal all elements after clicking button 
 const revealInfo = function (e) {
     console.log(e);
     document.querySelector('p').style.display = 'block';
     document.querySelector('.skills').style.display = 'block';
     document.querySelector('.projects').style.display = 'block';
+    document.querySelector('button').style.display = 'none';
+
 }
 
 // event listeners 
