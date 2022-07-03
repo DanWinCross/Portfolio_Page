@@ -79,6 +79,13 @@ button {
     border-radius: 20px;
 }
 
+button:hover {
+    background-color: #647362;
+    color: #F0F1F2;
+    border: 2px solid #FF5629;
+    padding: .38rem 1.9rem;
+}
+
 .skills{
     grid-area: skills;
     align-self: center;
